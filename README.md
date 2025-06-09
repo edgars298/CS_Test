@@ -17,8 +17,8 @@ This project is a web application built with ASP.NET Core and Entity Framework C
 - Set VAT value
 
 ### 2. Run migrations (optional)
-- You can use command 
+- Use command `update-database` to manually migrate the database.
 - Database seeder applies migrations on application start up.
 
 ### 3. Run the app
-- Run the app using Api as startup project and use swagger to interact with endpoints.
+- Run the app using `Api` as startup project and use swagger to interact with endpoints.
