@@ -15,9 +15,9 @@ public class AuditController(IProductAuditService _productAuditService) : Contro
     private readonly IProductAuditService _productAuditService = _productAuditService;
 
     [HttpGet]
-    public async Task<IActionResult> GetAsync(DateOnly from, DateOnly to)
+    public async Task<IActionResult> GetAsync(DateOnly? from, DateOnly? to)
     {
-        var productAudits = _productAuditService.GetByDateRange(from, to);
+        var productAudits = _productAuditService.GetByDateRange(from ?? DateOnly.MinValue, to ?? DateOnly.MaxValue);
 
         var mappedProductAudits = await productAudits.Select(pa => new AuditDto<int>
         {
