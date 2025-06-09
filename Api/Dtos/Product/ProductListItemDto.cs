@@ -10,6 +10,5 @@ public class ProductListItemDto
 
     public required decimal Price { get; set; }
 
-
     public decimal TotalPriceWithVat { get; set; }
 }
