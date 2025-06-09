@@ -16,5 +16,9 @@ This project is a web application built with ASP.NET Core and Entity Framework C
 - Set JWT key and issuer
 - Set VAT value
 
-### 2. Run the app
+### 2. Run migrations (optional)
+- You can use command 
+- Database seeder applies migrations on application start up.
+
+### 3. Run the app
 - Run the app using Api as startup project and use swagger to interact with endpoints.
